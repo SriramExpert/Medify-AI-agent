@@ -49,6 +49,7 @@ docker run -p 8000:8000 -e OPENWEATHER_API_KEY=your_key yourusername/agentic-ai-
 
 
 # 🏗️ System Architecture
+```
 ┌─────────────────────────────────────────────────────┐
 │                 User Interface                      │
 └──────────────────────────┬──────────────────────────┘
@@ -76,6 +77,7 @@ docker run -p 8000:8000 -e OPENWEATHER_API_KEY=your_key yourusername/agentic-ai-
                   │Web Search  │ │PostgreSQL │
                   │ (Fallback) │ │ Database  │
                   └────────────┘ └───────────┘
+```
 
 ### 🧠 **Agentic Workflow:**
 - Intelligent query routing
@@ -126,6 +128,7 @@ Server Configuration
 
 # 📁 Project Structure
 
+```
 Medify/
 ├── app/                    # FastAPI application
 │   ├── main.py           # Application entry point
@@ -152,6 +155,7 @@ Medify/
 ├── docker-compose.yml   # Multi-service setup
 ├── requirements.txt     # Python dependencies
 └── README.md           # This file
+```
 
 # 🎯 Key Features
 ✅ Intelligent Agent Orchestration
