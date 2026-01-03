@@ -3,12 +3,18 @@ A sophisticated multi-agent AI system that intelligently routes queries, selects
 
 # Agentic AI Workflow Chatbot 🚀
 
-https://img.shields.io/badge/Python-3.11+-blue.svg
-https://img.shields.io/badge/FastAPI-0.104+-green.svg
-https://img.shields.io/badge/Docker-Enabled-blue.svg
-https://img.shields.io/badge/PostgreSQL-15+-blue.svg
-https://img.shields.io/badge/License-MIT-yellow.svg
+<img width="1919" height="1079" alt="Image" src="https://github.com/user-attachments/assets/6f193d0f-ac9c-4192-ba7b-7f4b2acdc8c9" />
+
+<img width="1919" height="1079" alt="Image" src="https://github.com/user-attachments/assets/5e63197a-fa5a-48b7-b675-302a1b7e527d" />
+
+<img width="1918" height="1078" alt="Image" src="https://github.com/user-attachments/assets/24659198-8e5d-423a-9899-5f111670bb00" />
+
+<img width="1919" height="1079" alt="Image" src="https://github.com/user-attachments/assets/c0b54523-15d8-4cfd-b39f-8d1b4e3f1f34" />
+
+<img width="1919" height="1079" alt="Image" src="https://github.com/user-attachments/assets/48079440-1101-4515-a7a2-c66afb11579d" />
+
 # Demo Video:
+I have uploaded the video in google drive can you please refer it through the link
 
 # 🐳 Docker Deployment
 The entire system is containerized and deployed as Docker containers:
@@ -49,33 +55,33 @@ docker run -p 8000:8000 -e OPENWEATHER_API_KEY=your_key yourusername/agentic-ai-
 
 
 # 🏗️ System Architecture
-┌─────────────────────────────────────────────────────┐
-│                 User Interface                      │
-└──────────────────────────┬──────────────────────────┘
-                           │
-┌──────────────────────────▼──────────────────────────┐
-│           Agent Orchestrator (FastAPI)              │
-│  ┌──────────────────────────────────────────────┐  │
-│  │ 1. Query Analysis & Agent Selection          │  │
-│  │ 2. Tool Execution Coordination               │  │
-│  │ 3. Response Aggregation & Formatting         │  │
-│  └──────────────────────────────────────────────┘  │
-└──────────┬──────────────┬──────────────┬───────────┘
-           │              │              │
-    ┌──────▼─────┐ ┌─────▼─────┐ ┌─────▼─────┐
-    │ Weather    │ │ Document  │ │ Meeting   │
-    │ Agent      │ │ Agent     │ │ Agent     │
-    └──────┬─────┘ └─────┬─────┘ └─────┬─────┘
-           │              │              │
-    ┌──────▼─────┐ ┌─────▼─────┐ ┌─────▼─────┐
-    │OpenWeather │ │PDF/TXT    │ │Database   │
-    │   API      │ │Processing │ │  Agent    │
-    └────────────┘ └─────┬─────┘ └─────┬─────┘
-                         │              │
-                  ┌──────▼─────┐ ┌─────▼─────┐
-                  │Web Search  │ │PostgreSQL │
-                  │ (Fallback) │ │ Database  │
-                  └────────────┘ └───────────┘
+    ┌─────────────────────────────────────────────────────┐
+    │                 User Interface                      │
+    └──────────────────────────┬──────────────────────────┘
+                               │
+    ┌──────────────────────────▼──────────────────────────┐
+    │           Agent Orchestrator (FastAPI)              │
+    │  ┌──────────────────────────────────────────────┐  │
+    │  │ 1. Query Analysis & Agent Selection          │  │
+    │  │ 2. Tool Execution Coordination               │  │
+    │  │ 3. Response Aggregation & Formatting         │  │
+    │  └──────────────────────────────────────────────┘  │
+    └──────────┬──────────────┬──────────────┬───────────┘
+               │              │              │
+        ┌──────▼─────┐ ┌─────▼─────┐ ┌─────▼─────┐
+        │ Weather    │ │ Document  │ │ Meeting   │
+        │ Agent      │ │ Agent     │ │ Agent     │
+        └──────┬─────┘ └─────┬─────┘ └─────┬─────┘
+               │              │              │
+        ┌──────▼─────┐ ┌─────▼─────┐ ┌─────▼─────┐
+        │OpenWeather │ │PDF/TXT    │ │Database   │
+        │   API      │ │Processing │ │  Agent    │
+        └────────────┘ └─────┬─────┘ └─────┬─────┘
+                             │              │
+                      ┌──────▼─────┐ ┌─────▼─────┐
+                      │Web Search  │ │PostgreSQL │
+                      │ (Fallback) │ │ Database  │
+                      └────────────┘ └───────────┘
 
 ### 🧠 **Agentic Workflow:**
 - Intelligent query routing
@@ -125,33 +131,33 @@ Server Configuration
 2. OpenAI (Optional): Get from platform.openai.com for enhanced document processing
 
 # 📁 Project Structure
-
-Medify/
-├── app/                    # FastAPI application
-│   ├── main.py           # Application entry point
-│   ├── config.py         # Configuration settings
-│   └── dependencies.py   # Shared dependencies
-├── agents/               # All 4 AI agents
-│   ├── weather_agent.py
-│   ├── document_agent.py
-│   ├── meeting_agent.py
-│   ├── db_agent.py
-│   └── orchestrator.py  # Intelligent agent router
-├── tools/                # Agent tools
-│   ├── weather_tool.py  # OpenWeatherMap integration
-│   ├── database_tool.py # PostgreSQL operations
-│   ├── document_tool.py # PDF/text processing
-│   └── search_tool.py   # Google search fallback
-├── api/                  # API routes
-├── database/             # Database models & connection
-├── frontend/ 
-├── tests/               # Comprehensive test suite
-├── static/              # Uploads directory
-├── images/              # Screenshots and diagrams
-├── Dockerfile           # Container configuration
-├── docker-compose.yml   # Multi-service setup
-├── requirements.txt     # Python dependencies
-└── README.md           # This file
+    
+    Medify/
+    ├── app/                    # FastAPI application
+    │   ├── main.py           # Application entry point
+    │   ├── config.py         # Configuration settings
+    │   └── dependencies.py   # Shared dependencies
+    ├── agents/               # All 4 AI agents
+    │   ├── weather_agent.py
+    │   ├── document_agent.py
+    │   ├── meeting_agent.py
+    │   ├── db_agent.py
+    │   └── orchestrator.py  # Intelligent agent router
+    ├── tools/                # Agent tools
+    │   ├── weather_tool.py  # OpenWeatherMap integration
+    │   ├── database_tool.py # PostgreSQL operations
+    │   ├── document_tool.py # PDF/text processing
+    │   └── search_tool.py   # Google search fallback
+    ├── api/                  # API routes
+    ├── database/             # Database models & connection
+    ├── frontend/ 
+    ├── tests/               # Comprehensive test suite
+    ├── static/              # Uploads directory
+    ├── images/              # Screenshots and diagrams
+    ├── Dockerfile           # Container configuration
+    ├── docker-compose.yml   # Multi-service setup
+    ├── requirements.txt     # Python dependencies
+    └── README.md           # This file
 
 # 🎯 Key Features
 ✅ Intelligent Agent Orchestration
