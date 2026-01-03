@@ -1,0 +1,12 @@
+.venv
+__pycache__
+.git
+.vscode
+.idea
+.env
+*.log
+frontend/medify_frontend/node_modules
+frontend/medify_frontend/dist
+uploads
+static/uploads
+tests
