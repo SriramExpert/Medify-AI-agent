@@ -3,11 +3,11 @@ A sophisticated multi-agent AI system that intelligently routes queries, selects
 
 # Agentic AI Workflow Chatbot 🚀
 
-https://img.shields.io/badge/Python-3.11+-blue.svg
-https://img.shields.io/badge/FastAPI-0.104+-green.svg
-https://img.shields.io/badge/Docker-Enabled-blue.svg
-https://img.shields.io/badge/PostgreSQL-15+-blue.svg
-https://img.shields.io/badge/License-MIT-yellow.svg
+![Python 3.11+](https://img.shields.io/badge/Python-3.11+-blue.svg)
+![FastAPI 0.104+](https://img.shields.io/badge/FastAPI-0.104+-green.svg)
+![Docker Enabled](https://img.shields.io/badge/Docker-Enabled-blue.svg)
+![PostgreSQL 15+](https://img.shields.io/badge/PostgreSQL-15+-blue.svg)
+![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)
 # Demo Video:
 
 # 🐳 Docker Deployment
